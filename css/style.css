@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* header */
+
+header, nav ul, header div {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  justify-content: space-between;
+  padding: 9px 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13.55px;
+}
+
+header img {
+  width: 23.16px;
+  margin-right: 3px;
+}
+
+/* main */
+
+.hero {
+  background-image: url('../images/hero-post.png');
+  width: 100vw;
+  color: white;
+}
+
+footer {
+  padding: 33px;
+  background: #202020;
+  color: #D7D7D7;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer h4 {
+  color: #ECECEC;
+  margin:0 0 3px 0;
+}
+
+footer p {
+  margin: 0;
+}
