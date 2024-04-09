@@ -26,6 +26,13 @@ h2 {
   font-size: 32px;
 }
 
+h3 {
+  font-size: 16px;
+}
+
+a {
+  color: black;
+}
 
 /* header */
 
@@ -76,16 +83,13 @@ footer h4 {
   margin:0 0 3px 0;
 }
 
-/* footer p {
-  margin: 0;
-} */
-
-/* hero section on index.html */
+/* index.html layout */
 
 .hero {
   background-image: url('../images/hero-post.png');
   width: 100vw;
   background-size: cover;
+  background-position: bottom;
   color: white;
   min-height: 293px;
   display: flex;
@@ -95,22 +99,16 @@ footer h4 {
 }
 
 .hero h2 a {
-  margin: 8px 0;
   color: white;
   text-decoration: none;
   text-align: left;
+  letter-spacing: -1px;
 }
 
-/* .hero span, .hero p {
+.hero h2 {
   margin: 0;
-} */
-
-/* .hero span {
-  font-size: 12px;
-  text-transform: uppercase;
-} */
-
-/* posts on index.html*/
+  line-height: 33px;
+}
 
 .post img {
   width: 100%;
@@ -123,27 +121,22 @@ footer h4 {
 
 .post span {
   font-size: 14.17px;
-  /* text-transform: uppercase; */
 }
-
-/* .post p, .post span {
-  margin: 0;
-} */
 
 .post h3 {
   font-size: 24px;
   margin: 9px 0;
 }
 
-a {
+#view-more {
   text-align: center;
-  color: black;
   font-weight: bold;
   display: block;
   margin-bottom: 27px;
 }
 
-/* post.html */
+/* post.html layout */
+
 .detailed-post {
   margin-top: 32px;
 }
@@ -157,23 +150,30 @@ a {
 .detailed-post img {
   width: 100%;
   min-height: 191px;
-  margin-top: 35px;
-  margin-bottom: 19px;
+  margin: 35px 0 19px 0;
 }
 
-.detailed-post h3 {
-  font-size: 16px;
-}
-
-.recent-posts h3 {
-  font-size: 16px;
+.recent-posts {
   text-align: center;
 }
 
+/* about-me.html layout */
+
+.about-me img {
+  width: 182px;
+  margin: 26px 0;
+}
+
+.about-me h2 {
+  font-size: 34.84px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  margin: 0 0 18px 0;
+}
 
 /* media */
 
-@media (min-width: 1085px) {
+@media (min-width: 800px) {
   .container {
     margin: 0 53px;
   }
@@ -186,11 +186,21 @@ a {
   .post {
     margin: 41px 0;
   }
+  .hero {
+    min-height: 488px;
+    background-position: top;
+  }
   .hero div {
     max-width: 657px;
+    margin-bottom: 34.27px;
   }
   .text-container {
     max-width: 844px;
     margin: 0 auto;
+  }
+  .about-me-hero{
+    display: flex;
+    align-items: center;
+    gap: 33px;
   }
 }
