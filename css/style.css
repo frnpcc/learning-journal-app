@@ -11,6 +11,22 @@ body {
   margin: 0 20px
 }
 
+/* typography */
+
+p, span {
+  margin: 0;
+}
+
+span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+
 /* header */
 
 header, nav ul, header div {
@@ -21,7 +37,6 @@ header, nav ul, header div {
 header {
   justify-content: space-between;
   padding: 9px 0;
-  border-bottom: 1px solid lightgrey;
 }
 
 nav ul {
@@ -30,8 +45,10 @@ nav ul {
   font-size: 12px;
 }
 
-nav ul li {
+nav ul li a {
   margin: 0 15px;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 header h1 {
@@ -42,66 +59,6 @@ header h1 {
 header img {
   width: 23.16px;
   margin-right: 3px;
-}
-
-/* hero */
-
-.hero {
-  background-image: url('../images/hero-post.png');
-  width: 100vw;
-  color: white;
-  min-height: 293px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding-bottom: 25px;
-}
-
-.hero h2 {
-  font-size: 32px;
-  margin: 8px 0;
-}
-
-.hero span, .hero p {
-  margin: 0;
-}
-
-.hero span {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-/* posts */
-
-.post img {
-  width: 100%;
-  margin-bottom: 14px;
-}
-
-.post {
-  margin: 41px 20px;
-}
-
-.post span {
-  font-size: 14.17px;
-  text-transform: uppercase;
-}
-
-.post p, .post span {
-  margin: 0;
-}
-
-.post h3 {
-  font-size: 24px;
-  margin: 9px 0;
-}
-
-a {
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 27px;
 }
 
 /* footer */
@@ -119,9 +76,102 @@ footer h4 {
   margin:0 0 3px 0;
 }
 
-footer p {
+/* footer p {
   margin: 0;
+} */
+
+/* hero section on index.html */
+
+.hero {
+  background-image: url('../images/hero-post.png');
+  width: 100vw;
+  background-size: cover;
+  color: white;
+  min-height: 293px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 25px;
 }
+
+.hero h2 a {
+  margin: 8px 0;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* .hero span, .hero p {
+  margin: 0;
+} */
+
+/* .hero span {
+  font-size: 12px;
+  text-transform: uppercase;
+} */
+
+/* posts on index.html*/
+
+.post img {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.post {
+  margin: 41px 20px;
+}
+
+.post span {
+  font-size: 14.17px;
+  /* text-transform: uppercase; */
+}
+
+/* .post p, .post span {
+  margin: 0;
+} */
+
+.post h3 {
+  font-size: 24px;
+  margin: 9px 0;
+}
+
+a {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 27px;
+}
+
+/* post.html */
+.detailed-post {
+  margin-top: 32px;
+}
+
+.detailed-post h2 {
+  margin: 15px 0;
+  letter-spacing: -1px;
+  line-height: 33px;
+}
+
+.detailed-post img {
+  width: 100%;
+  min-height: 191px;
+  margin-top: 35px;
+  margin-bottom: 19px;
+}
+
+.detailed-post h3 {
+  font-size: 16px;
+}
+
+.recent-posts h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* media */
 
 @media (min-width: 1085px) {
   .container {
@@ -138,5 +188,9 @@ footer p {
   }
   .hero div {
     max-width: 657px;
+  }
+  .text-container {
+    max-width: 844px;
+    margin: 0 auto;
   }
 }
